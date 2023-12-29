@@ -22,5 +22,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get("customers", [CustomerController::class, 'getCustomers']);
-Route::get("customers/{id}", [CustomerController::class, 'getCustomersById']);
+Route::get('customers', [CustomerController::class, 'getCustomers']);
+Route::get('customers/{id}', [CustomerController::class, 'getCustomersById']);
+Route::post('customers', [CustomerController::class, 'postNewCustomer']);
+Route::put('customers/{id}', [CustomerController::class, 'putEditCustomer']);
+Route::delete('customers/{id}', [CustomerController::class, 'deleteCustomer']);
+
+
