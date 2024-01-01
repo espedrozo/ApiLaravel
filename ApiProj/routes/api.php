@@ -4,7 +4,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\controllerAPI;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ClientController;
+
 use App\Models\Customer;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +31,8 @@ Route::post('customers', [CustomerController::class, 'postNewCustomer']);
 Route::put('customers/{id}', [CustomerController::class, 'putEditCustomer']);
 Route::delete('customers/{id}', [CustomerController::class, 'deleteCustomer']);
 
-
+Route::get('clients', [ClientController::class, 'getClients']);
+Route::get('clients/{id}', [ClientController::class, 'getClientsById']);
+Route::post('clients', [ClientController::class, 'postNewClient']);
+Route::put('clients/{id}', [ClientController::class, 'putEditClient']);
+Route::delete('clients/{id}', [ClientController::class, 'deleteClient']);
