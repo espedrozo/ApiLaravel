@@ -1,5 +1,7 @@
 const mix = require('laravel-mix');
 
+
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,7 +13,31 @@ const mix = require('laravel-mix');
  |
  */
 
+// mix.js('resources/js/app.js', 'public/js')
+//     .postCss('resources/css/app.css', 'public/css', [
+//         //
+//     ]);
+
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+.vue();
+
+mix.js('resources/js/app.js', 'public/js')
+   .babelConfig({
+       plugins: ['@babel/plugin-syntax-dynamic-import'],
+   })
+   .vue();
+
+
+   
+//    mix.js('resources/js/app.js', 'public/js')
+//    .vue({ version: 3 })
+//    .postCss('resources/css/app.css', 'public/css', [
+//        require("tailwindcss"),
+//    ]);
+
+mix.browserSync('127.0.0.1:8000');
+
+// webpack.mix.js
+
+
+

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\controllerAPI;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\SyncController;
+
 
 use App\Models\Customer;
 
@@ -36,3 +38,7 @@ Route::get('clients/{id}', [ClientController::class, 'getClientsById']);
 Route::post('clients', [ClientController::class, 'postNewClient']);
 Route::put('clients/{id}', [ClientController::class, 'putEditClient']);
 Route::delete('clients/{id}', [ClientController::class, 'deleteClient']);
+
+
+Route::get('syncDatabases', [SyncController::class, 'syncDatabases']);
+

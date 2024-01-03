@@ -14,6 +14,7 @@ class Customer extends Model
         'first_name',
         'last_name',
         'sex',
-        'birth_date'
+        'birth_date',
+        'status'
     ];
 }
