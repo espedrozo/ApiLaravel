@@ -39,6 +39,5 @@ Route::post('clients', [ClientController::class, 'postNewClient']);
 Route::put('clients/{id}', [ClientController::class, 'putEditClient']);
 Route::delete('clients/{id}', [ClientController::class, 'deleteClient']);
 
-
 Route::get('syncDatabases', [SyncController::class, 'syncDatabases']);
 
