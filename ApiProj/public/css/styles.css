@@ -1,0 +1,55 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+}
+
+.buttons-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3490dc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#display-layout {
+    background-color: rgb(237, 235, 235);
+    border: 1px solid;
+    border-radius: 2px;
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical conforme necessário */
+}
+
+
+
+.customer-display {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px #ff00001a;
+}
